@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Usuario";
+}
+
+<div class="d-flex justify-content-center align-items-center my-5">
+        <div class="card px-4 py-3 border-0 mt-5">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+                <img src="~/images/lg-ceplan-illustration-suport.png" alt="icono de soporte técnico" class="img-fluid mb-3" />
+                <h5 class="card-title fw-semibold mb-3" style="font-size: 20px">Cuenta bloqueada <br />temporalmente</h5>
+                <div class="py-3" style="max-width: 50%">
+                    <p class="card-text">Has excedido el número máximo de intentos fallidos (5). Por seguridad, tu cuenta ha sido bloqueada durante 15 minutos. Intenta nuevamente más tarde.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<style>
+    body {
+        background-image: url('@Url.Content("~/images/bg-login.png")');
+    }
+</style>

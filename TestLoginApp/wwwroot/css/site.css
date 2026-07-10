@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap');
+
+:root {
+    --bs-body-font-family: 'DM Sans', sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom 75px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/*Custom*/
+
+.bg-custom-red {
+    background-color: #9A1413 !important;
+}
+
+.text-custom-neutral-90 {
+    color: #3A424A !important;
+}
+
+.text-custom-neutral {
+    color: #515D68 !important;
+}
+
+.text-custom-neutral-60 {
+    color: #8A929A !important;
+}
+
+.text-blue-base-60 {
+    color: #0156AC !important;
+}
+
+.selected-toggle {
+    border-color: #0156AC !important;
+}

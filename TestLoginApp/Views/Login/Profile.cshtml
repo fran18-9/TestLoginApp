@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Perfil";
+    Layout = "_SystemLayout";
+}
+
+<div class="d-flex align-items-center">
+    <div class="card w-100 px-4 pt-4 border-0 shadow">
+        <h4 style="font-size: 12px">Perfil de usuario</h4>
+        <h3 class="fw-semibold">Perfil de usuario</h3>
+        <div class="card-body p-4">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                    <div>
+                        <img src="~/images/no-picture.png" alt="foto de perfil vacía" />
+                    </div>
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Mendoza Quispe, July Camila</h5>
+                            <p class="card-subtitle text-custom-neutral">Administrador de Recursos</p>
+                            <p class="text-custom-neutral">011 Ministerio de Salud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex w-100 fw-semibold mb-4">
+                <a class="border-2 border-bottom text-blue-base-60 selected-toggle text-center flex-grow-1 text-decoration-none" href="">Información básica</a>
+                <a class="border-bottom text-custom-neutral-60 text-center flex-grow-1 text-decoration-none" href="">Responsabilidades</a>
+                <a class="border-bottom text-custom-neutral-60 text-center flex-grow-1 text-decoration-none" href="">Historial de Responsabilidades</a>
+            </div>
+            <form class="mb-5">
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Nombres</label>
+                        <input type="text" class="form-control bg-white border-0" value="July Camila" disabled>
+                    </div>
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Primer Apellido</label>
+                        <input type="text" class="form-control bg-white border-0" value="Mendoza" disabled>
+                    </div>
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Segundo Apellido</label>
+                        <input type="text" class="form-control bg-white border-0" value="Quispe" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Tipo de Documento de Identidad</label>
+                        <input type="text" class="form-control bg-white border-0" value="DNI" disabled>
+                    </div>
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">N° de Documento de Identidad</label>
+                        <input type="text" class="form-control bg-white border-0" value="07079879" disabled>
+                    </div>
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Fecha de Nacimiento</label>
+                        <input type="text" class="form-control bg-white border-0" value="15 / 04 / 1944" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Nacionalidad</label>
+                        <input type="text" class="form-control bg-white border-0" value="Peruana" disabled>
+                    </div>
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Sexo</label>
+                        <input type="text" class="form-control bg-white border-0" value="Femenino" disabled>
+                    </div>
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Correo electrónico principal</label>
+                        <input type="text" class="form-control bg-white border-0" value="test@minsa.gob.pe" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Correo electrónico secundario <small>(Opcional)</small></label>
+                        <input type="text" class="form-control" value="">
+                    </div>
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Teléfono Móvil</label>
+                        <input type="text" class="form-control bg-white border-0" value="+51 999 999 999" disabled>
+                    </div>
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Teléfono secundario</label>
+                        <div class="d-flex gap-3">
+                            <select class="form-select flex-grow-0 w-25" disabled>
+                                <option value="">Tipo</option>
+                            </select>
+                            <input type="text" class="form-control flex-grow-1" value="" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Tipo de Contratación</label>
+                        <input type="text" class="form-control bg-white border-0" value="CAS" disabled>
+                    </div>
+                    <div class="mb-3 col">
+                        <label class="form-label fw-medium">Fecha de contratación</label>
+                        <input type="text" class="form-control bg-white border-0" value="09 / 03 / 2015" disabled>
+                    </div>
+                    <div class="mb-3 col">
+                        
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+<style>
+ 
+</style>

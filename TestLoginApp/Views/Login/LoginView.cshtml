@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Usuario";
+}
+
+<div class="d-flex justify-content-center align-items-center my-5">
+    <div class="card px-4 pt-4 border-0">
+        <div class="card-body">
+           <form asp-action="Login" asp-asp-controller="Login" method="post" class="mb-5">
+               <div class="mb-4">
+                   <img src="~/images/button_group.png" alt="" />
+               </div>
+                <div class="mb-3">
+                    <label class="form-label fw-medium">Usuario</label>
+                    <div class="input-group">
+                        <span class="input-group-text py-2 pe-0">
+                            <img src="~/images/user-field-icon.png" alt="person icon" />
+                        </span>
+                        <input type="text" id="username" name="username" class="form-control border-start-0" placeholder="Ingresar usuario">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <div class="input-group">
+                        <span class="input-group-text py-2 pe-0">
+                            <img src="~/images/lock-field-icon.png" alt="lock icon" />
+                        </span>
+                        <input id="password" id="password" type="password" name="password" class="form-control border-start-0 border-end-0" placeholder="Ingresar contraseña">
+                        <input type="checkbox" class="form-check-input visually-hidden" id="togglePassword">
+                        <label class="input-group-text py-2" for="togglePassword">
+                            <img src="~/images/eye-toggle-icon.png" alt="eye icon" />
+                        </label>
+                    </div>
+                </div>
+                <a href="" class="card-link fw-medium text-decoration-none" style="font-size: 12px">¿Olvidó su contraseña?</a>
+                <button type="submit" class="btn btn-primary w-100 mt-4">Ingresar</button>
+           </form>
+
+            <div class="py-3 fw-medium d-flex gap-3">
+                <div>
+                    <img src="~/images/ceplan-illustration-suport.png" alt="icono soporte técnico" />
+                </div>
+                <p class="card-text mb-3 text-custom-neutral">¿Necesita ayuda?, <a href="" class="text-decoration-none">contacte con el<br /> área de soporte</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <style>
+            body {
+                background-image: url('@Url.Content("~/images/bg-login.png")');
+            }
+    </style>
+
+@if (TempData["AlertMessage"] != null)
+{
+    <script type="text/javascript">
+        alert('@TempData["AlertMessage"]');
+    </script>
+}

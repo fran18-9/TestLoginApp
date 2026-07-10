@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TestLoginApp</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TestLoginApp.styles.css" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column min-vh-100 mb-0">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-custom-red box-shadow p-3">
+            <div class="container-fluid">
+                <div>
+                    <img src="~/images/ceplan-logo-blanco.png" alt="Logo de CEPLAN" />
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                    <div class="p-2 pt-1">
+                        <img src="~/images/question-mark.png" alt="question mark icon" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container flex-grow-1 view-background px-0">
+        <main role="main" class="h-100">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="text-muted bg-white">
+        <div class="container p-3 w-100 d-flex justify-content-end" style="margin-right: 1.5rem">
+            <img src="~/images/institute.png" width="380" height="44" class="img-fluid d-inline-block align-top" alt="institue logo"/>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

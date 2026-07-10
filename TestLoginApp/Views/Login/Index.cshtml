@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Bienvenida";
+}
+
+<div class="d-flex justify-content-center align-items-center my-5">
+    <div class="card px-4 py-3 border-0">
+        <div class="card-body text-center">
+            <img src="~/images/activation-icon.png" alt="rocket image" class="img-fluid mb-3" />
+        <h5 class="card-title fw-semibold mb-3">¡Bienvenida, July!</h5>
+        <div class="py-5">
+            <p class="card-text mb-3">Su cuenta en aplicativo X está activada.</p>
+            <p class="card-text mb-3">Ya puede iniciar sesión.</p>
+        </div>
+        <a class="btn btn-primary py-2 px-4 w-100" role="button" href="/Login/LoginView">Iniciar Sesión</a>
+    </div>
+</div>
+</div>
+
+<style>
+    body {
+        background-image: url('@Url.Content("~/images/bg-welcome.png")');
+    }
+</style>
