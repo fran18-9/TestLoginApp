@@ -27,7 +27,7 @@ INSERT INTO usuarios VALUES ('46844596', '88888888', 'Mendoza Quispe, July', 'op
 ### Descripción del Trabajo
 Se desarrolló una aplicación web funcional de autenticación utilizando el patrón **MVC (Model-View-Controller)** en **ASP.NET Core**. La aplicación consta de un flujo completo de cuatro vistas interconectadas basadas en el diseño de Figma:
 
-Se implementó un sistema de control de acceso que valida las credenciales contra una base de datos y un mecanismo de seguridad de **bloqueo temporal de 15 minutos** si se superan los 3 intentos fallidos consecutivos.
+Se implementó un sistema de control de acceso que valida las credenciales contra una base de datos y un mecanismo de seguridad de **bloqueo temporal de 15 minutos** si se superan los 5 intentos fallidos consecutivos.
 
 ### Enfoque y Decisiones
 El proyecto se abordó bajo un enfoque orientado a resultados, priorizando la entrega de un prototipo 100% funcional y estable dentro del tiempo límite:
